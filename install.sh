@@ -805,8 +805,9 @@ install_v2ray() {
 		cp -rf $(pwd)/* /etc/v2ray/233boy/v2ray
 	else
 		pushd /tmp
-		git clone https://github.com/233boy/v2ray -b "$_gitbranch" /etc/v2ray/233boy/v2ray --depth=1
-		popd
+		git clone https://ghproxy.com/https://github.com/233boy/v2ray -b "$_gitbranch" /etc/v2ray/233boy/v2ray 
+	else
+		git clone https://ghproxy.com/https://github.com/lyfhlz/233boy-v2ray-backup /etc/v2ray/233boy/v2ray
 
 	fi
 
